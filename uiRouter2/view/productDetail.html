@@ -1,0 +1,28 @@
+ <div class="jumbotron text-center">
+        <h1>About us  Page</h1>
+        <p>{{ message }}</p>      
+     
+    <!-- 
+     <div class='text-center'>
+        <a type="button" class="btn btn-default">List</a>
+         <a type="button" class="btn btn-primary">Content</a>
+     </div>-->
+ </div>
+
+
+<!--<div ui-view></div>-->
+
+<div class="row">
+ <h4 class="text-center">Data is loading on page load....</h4>   
+    <!-- COLUMN ONE NAMED VIEW -->
+    <div class="col-sm-6">
+        <div ui-view="aboutUserList"></div>
+    </div>
+    
+    <!-- COLUMN TWO NAMED VIEW -->
+    <div class="col-sm-6">
+        <div ui-view="aboutUserProfile"></div>
+    </div>
+
+</div> 
+ 

@@ -1,0 +1,67 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <script src="angular.js"></script>
+</head>
+
+<body>
+    <div ng-controller="controller">
+        
+        <input type="text" ng-model="x" />
+        
+        
+        <div ng-repeat="person in names | filter:x">
+            <p>Name : {{person.name }} </p>
+        </div>
+
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.controller('controller', function ($scope) {
+            $scope.names = [
+                {
+                    name: 'Jani',
+                    country: 'Norway'
+                    },
+                {
+                    name: 'Carl',
+                    country: 'Sweden'
+                    },
+                {
+                    name: 'Margareth',
+                    country: 'England'
+                    },
+                {
+                    name: 'Hege',
+                    country: 'Norway'
+                    },
+                {
+                    name: 'Joe',
+                    country: 'Denmark'
+                    },
+                {
+                    name: 'Gustav',
+                    country: 'Sweden'
+                    },
+                {
+                    name: 'Birgit',
+                    country: 'Denmark'
+                    },
+                {
+                    name: 'Mary',
+                    country: 'England'
+                    },
+                {
+                    name: 'Kai',
+                    country: 'Norway'
+                    }
+        ];
+
+        });
+    </script>
+</body>
+
+</html>

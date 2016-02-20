@@ -1,0 +1,9 @@
+<div class="container">
+  <h2> {{message}} </h2>
+  <br>
+  <input type="text" data-ng-model="name" />
+<br>
+  <ul>
+       <li data-ng-repeat="student in students | filter:name"> {{student.name }}, {{ student.city}}</li>
+    </ul>
+</div>

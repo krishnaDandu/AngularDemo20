@@ -1,0 +1,17 @@
+ <div class="jumbotron text-center">
+        <h1>Home Page</h1>
+        <p>{{ message }}</p>    
+     <div class='text-center'>
+        <a ui-sref=".homeList" type="button"  class="btn btn-default">home List</a>       
+     </div>
+ </div>
+
+<div id="simple" ng-controller="MyController">
+  <p>Let's try this simple notify service, injected into the controller...</p>
+  <input ng-init="message='test'" ng-model="message" >
+  <button ng-click="callNotify(message);">NOTIFY</button>
+  <p>(you have to click 3 times to see an alert)</p>
+</div>
+
+
+<div ui-view class="text-center col-md-12"></div>

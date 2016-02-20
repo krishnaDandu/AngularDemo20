@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <script src="angular.js"></script>
+    <script src="controller.js"></script>
+</head>
+
+<body>
+    <div ng-controller="controller">
+        <div ng-repeat="data in comments">
+            <div ng-if="data.type == 'hoot'">
+                //different template with hoot data
+            </div>
+            <div ng-if="data.type == 'story'">
+                story Message
+            </div>
+            <div ng-if="data.type == 'article'">
+                article Message
+            </div>
+
+            <div ng-if="data.type == 'new'">
+                new Message
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

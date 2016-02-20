@@ -1,0 +1,40 @@
+
+ <div class="jumbotron text-center">
+        <h1>Home Page</h1>
+
+        <p>{{ message }}</p>
+
+        <a ui-sref=".list" class="btn btn-primary">List</a>
+    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+ </div>
+
+<!--<div id="simple" ng-controller="MyController" class="col-md-6">
+  <p>Let's try this simple notify service, injected into the controller...</p>
+  <input ng-init="message='test'" ng-model="message" >
+  <button ng-click="callNotify(message);">NOTIFY</button>
+  <p>(you have to click 3 times to see an alert)</p>
+</div>-->
+
+<div class="row">
+<div class="col-md-6" data-ng-controller="CountryListController" >
+<ul>
+	<li data-ng-repeat="countries in countries2">{{countries.name}}</li>
+</ul>
+</div>
+
+<div class="col-md-6" data-ng-controller="CountryListController2">
+	<ul>
+	<li data-ng-repeat="countries in countryList">{{countries.email}}</li>
+</ul>
+</div>
+
+<h1 data-ng-controller="Singleton1"></h1>
+<h1 data-ng-controller="Singleton2"></h1>
+
+
+
+
+
+
+</div>
+ <div ui-view class="col-md-6"></div>

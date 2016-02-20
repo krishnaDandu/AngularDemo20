@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="mainApp">
+<head>
+    
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="component/angular.js"></script>
+  <script src="component/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+
+<style>
+
+body {
+  padding-top: 20px;
+}
+
+.phones {
+  list-style: none;
+}
+
+.thumb {
+  float: left;
+  margin: -0.5em 1em 1.5em 0;
+  padding-bottom: 1em;
+  height: 100px;
+  width: 100px;
+}
+
+.phones li {
+  clear: both;
+  height: 115px;
+  padding-top: 15px;
+}
+
+</style>
+
+
+</head>
+<body>
+
+  <div ng-view></div>
+
+</body>
+</html>
